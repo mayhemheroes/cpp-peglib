@@ -1,0 +1,6 @@
+project: peglib
+target: peglib-fuzz
+
+cmds:
+    - cmd: ./peglib-fuzz
+      libfuzzer: true
