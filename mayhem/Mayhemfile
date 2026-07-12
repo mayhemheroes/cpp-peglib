@@ -1,0 +1,10 @@
+project: cpp-peglib
+target: peglib-fuzz
+
+testsuite:
+    - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+    - file://mayhem/peglib-fuzz/testsuite
+
+cmds:
+    - cmd: /mayhem/peglib-fuzz
+      libfuzzer: true
